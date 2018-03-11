@@ -1,0 +1,24 @@
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+
+    sourceCompatibility = 1.8
+
+    ext { springBootVersion = '2.0.0.RELEASE' }
+
+    buildscript {
+        repositories { mavenCentral() }
+    }
+
+    repositories { mavenCentral() }
+
+    dependencies {
+        testCompile('org.springframework.boot:spring-boot-starter-test')
+    }
+
+}
+
+
+
+
+
